@@ -38,7 +38,7 @@ fi
 '''
 }
 }
-}
+
 
 stage ('Deploy') {
 agent {label 'awsDeploy && awsDeploy2'}
