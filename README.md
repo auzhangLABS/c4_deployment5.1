@@ -1,7 +1,7 @@
 # Deployment 5.1 Documentation 
 
 ## Purpose:
-This deployment is a continuation of deployment 5. To view deployment 5 click [here!](https://github.com/auzhangLABS/c4_deployment-5). The purpose of this deployment is to utilize Jenkins agents. Why Jenkins Agents: Using Jenkins agents would add an additional layer of security ensuring the Jenkins master remains uncompromised from potentials. Additionally, this allows Jenkins to distribute the loads effectively to their agents, reducing build times and making it scaleable. 
+This deployment is a continuation of deployment 5. To view deployment 5 click [here!](https://github.com/auzhangLABS/c4_deployment-5). The purpose of this deployment is to utilize Jenkins agents. Why Jenkins Agents: Using Jenkins agents would add an additional layer of security ensuring the Jenkins master remains uncompromised from potentials. Additionally, this allows Jenkins to distribute the loads effectively to their agents, reducing build times and making it scalable. 
 
 ## Steps:
 We utilized Terraform to create our AWS cloud infrastructure. To see the terraform file, click [here!](https://github.com/auzhangLABS/c4_deployment5.1/blob/temp/main.tf) Here is a diagram of what it created.
