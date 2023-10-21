@@ -25,8 +25,8 @@ To create a Jenkins agent, we had to go into the instance with Jenkins. From Jen
    - Enter Host IP (other instance IP). Add your Jenkins credentials with an SSH username and a private key. Enter your username as ubuntu and add your private key directly (including the Start RSA Private Key and End RSA Private Key)
 7. For the host key verification strategy, click on the non-verifying verification strategy.
 8. And save. You can check if it was successful by clicking on the node and checking the log. A successful connection will return something like this: <br>
-![image](https://github.com/auzhangLABS/c4_deployment5.1/assets/138344000/d086a1d2-e2ab-4306-940f-b7e5df4d0005)
-9. To create another agent, repeat those steps and make sure you use the same label. If you use another label, make sure you specify it in the Jenkins file like this:
+![image](https://github.com/auzhangLABS/c4_deployment5.1/assets/138344000/d086a1d2-e2ab-4306-940f-b7e5df4d0005) <br>
+9. To create another agent, repeat those steps and make sure you use the same label. If you use another label, make sure you specify it in the Jenkins file like this: <br>
 ![image](https://github.com/auzhangLABS/c4_deployment5.1/assets/138344000/36053c50-9e8a-40c7-9276-92be0c73c271)
 
 
