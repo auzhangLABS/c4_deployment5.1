@@ -15,7 +15,7 @@ resource "aws_vpc" "main" {
     }
 }
 
-# creating security group
+# creating a security group
 resource "aws_security_group" "d5_1_sg" {
     name = "d5_sg"
     description = "tcp protocol for D5" 
@@ -111,7 +111,7 @@ resource "aws_instance" "pub3" {
   ami = var.ami
   instance_type =  var.instance_type
   vpc_security_group_ids = ["${aws_security_group.d5_1_sg.id}"]
-  subnet_id = "${aws_subnet.pubsubnet_2.id}"
+  subnet_id = "${aws_subnet.pubsubnet_1.id}"
   associate_public_ip_address = true
   key_name = "d5.1"
 
