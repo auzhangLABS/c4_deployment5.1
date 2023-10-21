@@ -38,7 +38,7 @@ To deploy, we created a Jenkins multibranch pipeline and ran the Jenkins file. A
 ## System Design Diagram
 ![image](https://github.com/auzhangLABS/c4_deployment5.1/assets/138344000/109171c2-1b0c-4570-bd1b-78ee9e8d08da)
  <br>
-To see the full diagram, click [here!](https://github.com/auzhangLABS/c4_deployment5.1/blob/temp/d5.1full.drawio.png)
+To see the full diagram, click [here!](https://github.com/auzhangLABS/c4_deployment5.1/blob/main/d5.1v3.drawio.png)
 
 ## Optimization
 I would optimize this deployment by putting the other application instance in a different availability zone instead of the same availability zone. This makes the application highly available as well as ensuring redundancy. Additionally, we can utilize Cloudfront (Content Delivery Network), which can accelerate the delivery of our web application.
