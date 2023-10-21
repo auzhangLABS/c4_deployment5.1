@@ -36,7 +36,8 @@ To deploy, we created a Jenkins multibranch pipeline and ran the Jenkins file. A
 ![image](https://github.com/auzhangLABS/c4_deployment5.1/assets/138344000/e4981d3f-7958-404e-925b-c23623e6a3c4)
 
 ## System Design Diagram
-![image](https://github.com/auzhangLABS/c4_deployment5.1/blob/main/d5.1v2.drawio.png) <br>
+![image](https://github.com/auzhangLABS/c4_deployment5.1/assets/138344000/109171c2-1b0c-4570-bd1b-78ee9e8d08da)
+ <br>
 To see the full diagram, click [here!](https://github.com/auzhangLABS/c4_deployment5.1/blob/temp/d5.1full.drawio.png)
 
 ## Optimization
