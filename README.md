@@ -10,7 +10,7 @@ We utilized Terraform to create our AWS cloud infrastructure. To see the terrafo
 We also created a new key pair in AWS and attached the private key to all my instances. This would be an easier way to SSH into the instance without fumbling with multiple keys. <br>
 
 #### Installing Package on Instances. 
-In one of the instances, we installed Jenkins and other necessary packages using user data. See user data script [here!](https://github.com/auzhangLABS/c4_deployment5.1/blob/temp/deployjenkins.sh)
+In one of the instances, we installed Jenkins and other necessary packages using user data. See user data script [here](https://github.com/auzhangLABS/c4_deployment5.1/blob/temp/deployjenkins.sh)!
 In the other instances, we installed the necessary packages in addition to default-jre (Default Java Runtime Environment) using different user data. See other user data scripts [here!](https://github.com/auzhangLABS/c4_deployment5.1/blob/temp/deploypython.sh). Default-jre would allow you to run Java applications on those instances.
 
 
@@ -24,7 +24,7 @@ To create a Jenkins agent, we had to go into the instance with Jenkins. From Jen
 6. For Launch Method, select "Launch agent via SSH."
    - Enter Host IP (other instance IP). Add your Jenkins credentials with an SSH username and a private key. Enter your username as ubuntu and add your private key directly (including the Start RSA Private Key and End RSA Private Key)
 7. For the host key verification strategy, click on the non-verifying verification strategy.
-8. And save. You can check if it was successful by clicking on the node and checking the log. A successful connection will return something like this:
+8. And save. You can check if it was successful by clicking on the node and checking the log. A successful connection will return something like this: <br>
 ![image](https://github.com/auzhangLABS/c4_deployment5.1/assets/138344000/d086a1d2-e2ab-4306-940f-b7e5df4d0005)
 9. To create another agent, repeat those steps and make sure you use the same label. If you use another label, make sure you specify it in the Jenkins file like this:
 ![image](https://github.com/auzhangLABS/c4_deployment5.1/assets/138344000/36053c50-9e8a-40c7-9276-92be0c73c271)
@@ -40,7 +40,7 @@ To deploy, we created a Jenkins multibranch pipeline and ran the Jenkins file. A
 To see the full diagram, click [here!](https://github.com/auzhangLABS/c4_deployment5.1/blob/temp/d5.1full.drawio.png)
 
 #### Optimization
-I would optimize this deployment by putting the other application instance in a different availability zone instead of the same availability zone. This makes the application highly available as well as ensuring redundancy. Additionally, we can utilize Cloudfront (Content Delivery Network) which can accelerate the delivery of our web application.
+I would optimize this deployment by putting the other application instance in a different availability zone instead of the same availability zone. This makes the application highly available as well as ensuring redundancy. Additionally, we can utilize Cloudfront (Content Delivery Network), which can accelerate the delivery of our web application.
 
 
 
