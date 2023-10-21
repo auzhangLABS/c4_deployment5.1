@@ -41,7 +41,7 @@ To deploy, we created a Jenkins multibranch pipeline and ran the Jenkins file. A
 To see the full diagram, click [here!](https://github.com/auzhangLABS/c4_deployment5.1/blob/main/d5.1v3.drawio.png)
 
 ## Optimization
-I would optimize this deployment by putting the other application instance in a different availability zone instead of the same availability zone as the Jenkins instance. This makes the application highly available as well as ensuring redundancy. Additionally, we can utilize Cloudfront (Content Delivery Network), accelerating the delivery of our web application. Additionally, we can add a load balancer to balance the traffic between the two different application instances. We should also use nginx as the web server, which would enhance the security of the application, and also allow nginx to act as a reverse proxy. At last, I would add a database that can be shared between the two instances.
+I would optimize this deployment by putting the other application instance in a different availability zone instead of the same availability zone as the Jenkins instance. This makes the application highly available as well as ensuring redundancy. Additionally, we can utilize Cloudfront (Content Delivery Network), accelerating the delivery of our web application. We can also add a load balancer to balance the traffic between the two different application instances. We should also use nginx as the web server, which would enhance the security of the application, and also allow nginx to act as a reverse proxy. At last, I would add a database that can be shared between the two instances.
 
 
 
