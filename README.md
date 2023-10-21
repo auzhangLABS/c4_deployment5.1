@@ -30,16 +30,16 @@ To create a Jenkins agent, we had to go into the instance with Jenkins. From Jen
 ![image](https://github.com/auzhangLABS/c4_deployment5.1/assets/138344000/36053c50-9e8a-40c7-9276-92be0c73c271)
 
 
-#### Deploying the application
+## Deploying the application
 To deploy, we created a Jenkins multibranch pipeline and ran the Jenkins file. After the pipeline is successful, you will have the banking application running on two different instances. 
 
 ![image](https://github.com/auzhangLABS/c4_deployment5.1/assets/138344000/e4981d3f-7958-404e-925b-c23623e6a3c4)
 
-#### System Design Diagram
+## System Design Diagram
 ![image](https://github.com/auzhangLABS/c4_deployment5.1/assets/138344000/6ef887de-679b-48d8-8454-006d06cec108) <br>
 To see the full diagram, click [here!](https://github.com/auzhangLABS/c4_deployment5.1/blob/temp/d5.1full.drawio.png)
 
-#### Optimization
+## Optimization
 I would optimize this deployment by putting the other application instance in a different availability zone instead of the same availability zone. This makes the application highly available as well as ensuring redundancy. Additionally, we can utilize Cloudfront (Content Delivery Network), which can accelerate the delivery of our web application.
 
 
