@@ -15,8 +15,8 @@ stage ('test') {
 steps {
 sh '''#!/bin/bash
 source test/bin/activate
-pip install pytest
 pip install mysqlclient
+pip install pytest
 py.test --verbose --junit-xml test-reports/results.xml
 '''
 }
