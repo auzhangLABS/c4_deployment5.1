@@ -15,7 +15,6 @@ stage ('test') {
 steps {
 sh '''#!/bin/bash
 source test/bin/activate
-pip install mysqlclient
 pip install pytest
 py.test --verbose --junit-xml test-reports/results.xml
 '''
@@ -27,7 +26,7 @@ junit 'test-reports/results.xml'
 }
 }
 stage ('Clean') {
-agent {label 'awsDeploy && awsDeploy2'}
+agent {label 'awsDeploy || awsDeploy2'}
 steps {
 sh '''#!/bin/bash
 if [[ $(ps aux | grep -i "gunicorn" | tr -s " " | head -n 1 | cut -d " " -f 2) != 0 ]]
@@ -41,13 +40,12 @@ fi
 }
 
 stage ('Deploy') {
-agent {label 'awsDeploy && awsDeploy2'}
+agent {label 'awsDeploy || awsDeploy2'}
 steps {
 keepRunning {
 sh '''#!/bin/bash
 python3.7 -m venv test
 source test/bin/activate
-pip install gunicorn
 pip install pip --upgrade
 pip install -r requirements.txt
 pip install gunicorn
