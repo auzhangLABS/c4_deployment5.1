@@ -13,10 +13,4 @@ sudo apt install -y python3.7
 
 sudo apt install -y python3.7-venv
 
-sudo apt install -y build-essential
-
-sudo apt install -y libmysqlclient-dev
-
-sudo apt install -y python3.7-dev
-
 sudo apt update
