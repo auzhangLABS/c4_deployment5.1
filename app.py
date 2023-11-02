@@ -17,13 +17,10 @@ bcrypt = Bcrypt(app)
 app.secret_key = os.urandom(24)
 
 # Set up database
-#engine = create_engine('sqlite:///database.db',connect_args={'check_same_thread': False},echo=True)
-#Base.metadata.bind = engine
-#db = scoped_session(sessionmaker(bind=engine))
-DATABASE_URL = 'mysql+mysqldb://admin:password@mydatabase2.ccbbyndnxqmj.us-east-1.rds.amazonaws.com/d5banking?charset=utf8mb4'
-engine = create_engine(DATABASE_URL, pool_pre_ping=True, echo=True)
+engine = create_engine('sqlite:///database.db',connect_args={'check_same_thread': False},echo=True)
 Base.metadata.bind = engine
-db = scoped_session(sessionmaker(bind=engine))    
+db = scoped_session(sessionmaker(bind=engine))
+    
 # MAIN
 @app.route('/')
 @app.route("/dashboard")
